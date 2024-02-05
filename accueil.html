@@ -3,9 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Expresso Elegance</title>
+    <title>Le Pavillon Azur</title>
     <link rel="stylesheet" href="accueil.css">
-    <link rel="shortcut icon" href="images/Espresso-removebg-preview.png" type="image/x-icon">
+    <!--logo de mon resto dans l'onglet-->
+    <link rel="shortcut icon" href="images/logoresto1.png" type="image/x-icon">
+    <!--Police d'écriture-->
+    <style>
+        @import url(https://db.onlinewebfonts.com/c/082ea5301631c0d689255cd09f71fe9a?family=Pansy+Bo+W03+Regular);
+        @import url(https://fonts.cdnfonts.com/css/tex-gyre-termes);
+    </style>
 
 </head>
 <body>
@@ -20,59 +26,229 @@
                   <span class="line line3"></span>
                 </div>  
                 <div class="logo">
-                    <img src="images/Espresso-removebg-preview.png" id="logo1">
+                    <a href="#home"><img src="images/Logoresto1.png" id="logo1"></a>
                 </div>
                 <div class="reserve">
                     <button id="reservation">Réserver</button>
                 </div>
                   <div class="menu-items">
                     <ul>
-                        <li><img src="images/Espresso-removebg-preview.png" alt=""></li>
+                        <li><img src="images/Logoresto1.png" alt=""></li>
                         <li><a href="#home">Haut de page</a></li>
                         <li><a href="#histoire-container">Histoire</a></li>
-                        <li><a href="#">Menus</a></li>
-                        <li><a href="#">Nos Adresses</a></li>
-                        <li><a href="#">contact</a></li>
-                        <li><a href="#">Phone</a></li>
-                        <li><a href="#">Catégories</a></li>
-                        <li><a href="#">Finances</a></li>
-                    </ul>
-                  </div>
+                        <li><a href="#menu">Menus</a></li>
+                        <li><a href="#sec-adresse">Nos Adresses</a></li>
+                        <li><a href="#contact">Contact</a></li>                  </div>
             </div>
           </div>
     </header>
+
     <!--Page de présentation du restaurant-->
     <main>
         <section id="home">
             <div id="presentation">
-                <h1 class="titre">Un café Unique Au Monde</h1>
-                <p class="soustitre">Si l’on demande à un touriste de résumer le mode de vie parisien, il devrait probablement évoquer l’arrogance de ces derniers, les traditionnels fromages et baguettes et… les cafés ! Les cafés font incontestablement partie intégrante de la ville. Ils sont à chaque coin de rue et chaque Parisien a ses habitudes dans l’un d’eux. Ce n’est pas un hasard si le géant Starbucks a eu tant de mal à s’implanter dans la capitale française, la culture du café parisien est encore bien vivace.</p>
-                <button id="menu"><a href="#menu">Nos menus</a></button>
+                <h1 class="titre">Le Pavillon Azur</h1>
+                <p class="soustitre">Le Pavillon Azur, un joyau culinaire niché au cœur de Paris, où l'élégance rencontre la tradition dans une symphonie gastronomique inoubliable. Plongez dans un univers de raffinement où chaque plat raconte une histoire de savoir-faire artisanal et d'héritage culinaire. Notre restaurant célèbre les délices intemporels de la cuisine à l'ancienne, magnifiant les saveurs authentiques et les techniques classiques avec une touche contemporaine. Dans un cadre somptueux aux accents de sophistication, chaque visite est une invitation à un voyage gustatif exquis, où les convives sont conviés à savourer l'essence même de la gastronomie française. Bienvenue à une expérience gastronomique inégalée au Pavillon Azur, où chaque bouchée est une ode à l'excellence.</p>
+                <button id="btnmenu"><a href="#menu">Nos Menus</a></button>
             </div>
         </section>
+        <!--Partie Historique du restaurant-->
         <section id="histoire-container">
             <div id="histoire">
-                <h1>Histoire de notre café </h1>
-                <p>Bienvenue dans le monde envoûtant du café à l'ancienne, où chaque tasse raconte une histoire de tradition, de passion et de délicatesse. Plongez dans un voyage sensoriel à travers les siècles, là où l'arôme riche et enivrant du café était une véritable institution, un rituel sacré célébré par les connaisseurs du monde entier.
-
-                    Imaginez-vous transporté à l'époque des cafés historiques, des lieux emblématiques où les esprits créatifs se réunissaient pour échanger des idées révolutionnaires, où les artistes se laissaient inspirer par chaque gorgée de cette boisson divine. Le café était bien plus qu'une simple boisson ; c'était le symbole d'une culture vibrante, d'un mode de vie exaltant.
-                    
-                    Nos grains de café, soigneusement sélectionnés par des experts passionnés, sont torréfiés avec amour selon des méthodes traditionnelles, préservant ainsi toute leur saveur authentique et leur caractère distinctif. Chaque lot est méticuleusement préparé pour offrir une expérience gustative incomparable, une véritable ode aux sens.
-                    
-                    Dans un monde où la rapidité prime souvent sur la qualité, nous nous engageons à préserver l'essence même du café à l'ancienne. Chaque tasse que vous dégusterez sera un hommage à cette tradition intemporelle, une invitation à ralentir, à savourer chaque instant avec une profonde gratitude pour les plaisirs simples de la vie.
-                    
-                    Rejoignez-nous dans cette aventure sensorielle où le café devient bien plus qu'une simple boisson, mais une véritable expérience culturelle. Découvrez notre sélection exquise de cafés à l'ancienne et laissez-vous emporter par la magie d'une tradition séculaire, réinventée pour ravir les palais les plus exigeants.</p>
+                <h1 id="titrehistoire">Histoire de notre Restaurant </h1>
+            </div>
+            <div id="debuthistoire">
+                <h3 id="annee">1956</h3>
+                <h4 id="description">Le Pavillon Azur ouvre ses portes pour la première fois dans le quartier historique de Paris, offrant aux parisiens une expérience culinaire unique. Fondé par le chef émérite Henri Leclerc, le restaurant devient rapidement une référence en matière de cuisine française classique.</h4>
+            </div>
+            <div id="etoilehistoire">
+                <h3 id="annee">1970</h3>
+                <h4 id="description">Le Pavillon Azur reçoit sa première étoile Michelin, reconnaissant ainsi l'excellence de sa cuisine et le dévouement de toute l'équipe envers l'art culinaire. C'est une consécration pour Henri Leclerc et son équipe, qui continuent à ravir les papilles de leurs convives avec passion et créativité.</h4>
+            </div>
+            <div id="milieuhistoire">
+                <h3 id="annee">2006</h3>
+                <h4 id="description"> Le Pavillon Azur célèbre son 50e anniversaire avec faste, marquant un demi-siècle d'excellence gastronomique et d'hospitalité incomparable. L'événement est l'occasion de rendre hommage aux générations de chefs et de personnel qui ont contribué à faire du restaurant une institution parisienne.</h4>
+            </div>
+            <div id="finhistoire">
+                <h3 id="annee">2010</h3>
+                <h4 id="description">
+                    Le Pavillon Azur subit une rénovation majeure, alliant harmonieusement le charme classique de son décor d'origine avec des touches contemporaines. Cette modernisation permet au restaurant de rester ancré dans son héritage tout en offrant une expérience encore plus immersive et luxueuse à ses convives.
+                </h4>
+            </div>
+        </section>
+        <!--Section avec quelques menus -->
+        <section id="menu">
+                <h1>Menus</h1>
+                <!--boutton de filtre-->
+                <div id="filter-buttons">
+                    <button onclick="Filtre('all')">Tout Afficher</button>
+                    <button onclick="Filtre('entreev')">Entrées Végans</button>
+                    <button onclick="Filtre('entree')">Entrées</button>
+                    <button onclick="Filtre('platv')">Plats Végans</button>
+                    <button onclick="Filtre('plat')">Plats</button>
+                    <button onclick="Filtre('dessert')">Desserts</button>
+                </div>
+                <!--les menus -->
+            <div id="scrollmenu" class="scrollmenu">
+                <div id="menu2" class="item plat platv">
+                    <img src="images/champignon.png" alt="" >
+                    <h3>Risotto aux champignons</h3>
+                    <h4>20€</h4>
+                    <h5>Un délicieux risotto crémeux préparé avec du riz Arborio cuit lentement dans un bouillon de légumes parfumé. Les champignons sautés ajoutent une texture savoureuse et une profondeur de saveur à ce plat réconfortant.</h5>
+                </div>
+                <div id="menu2" class="item plat platv">
+                    <img src="images/delicieux-haricots-cuits-dans-bol.jpg" alt="">
+                    <h3>Curry de pois chiches et légumes</h3>
+                    <h4>21€</h4>
+                    <h5>Un mélange coloré de pois chiches, de légumes saisonniers et de tomates mijotés dans une sauce curry épicée à base de lait de coco. Ce plat est généreusement assaisonné avec des épices exotiques et servi avec du riz basmati parfumé.</h5>
+                </div>
+                <div id="menu2" class="item plat platv">
+                    <img src="images/margherita.png" alt="">
+                    <h3>Pizza Margherita</h3>
+                    <h4>20€</h4>
+                    <h5>Une pizza classique garnie de tomates mûres, de mozzarella fondante, de basilic frais et d'un filet d'huile d'olive. La pâte à pizza est cuite à la perfection, créant une base croustillante et légère qui met en valeur les saveurs simples mais délicieuses des ingrédients.</h5>
+                </div>
+                <div id="menu2" class="item plat">
+                    <img src="images/poulet.png" alt="">
+                    <h3>Poulet rôti aux herbes</h3>
+                    <h4>20€</h4>
+                    <h5>Des morceaux de poulet juteux et tendres assaisonnés avec un mélange d'herbes fraîches telles que le romarin, le thym et le persil, puis rôtis lentement au four jusqu'à ce qu'ils soient dorés et croustillants à l'extérieur et incroyablement savoureux à l'intérieur.</h5>
+                </div>
+                <div id="menu2" class="item plat">
+                    <img src="images/pate carbo.png" alt="">
+                    <h3>Pâtes à la carbonara</h3>
+                    <h4>18€</h4>
+                    <h5>Des pâtes al dente mélangées à une sauce crémeuse à base de jaunes d'œufs, de pancetta croustillante, de fromage pecorino râpé et de poivre noir fraîchement moulu. Ce plat italien emblématique est simple mais riche en saveurs.</h5>
+                </div>
+                <div id="menu2" class="item plat">
+                    <img src="images/saumon-grille-asperges-assiette-blanche-isolee-fond-noir.jpg" alt="">
+                    <h3>Filet de saumon grillé </h3>
+                    <h4>30€</h4>
+                    <h5>Un filet de saumon frais grillé à la perfection, assaisonné avec du sel, du poivre et un filet de jus de citron frais. Servi avec une garniture de légumes grillés ou une salade fraîche, ce plat est à la fois sain et délicieux.</h5>
+                </div>
+                <div id="menu2" class="item dessert">
+                    <img src="images/tranche-gateau-aux-baies-dans-assiette-blanche-vue-du-dessus.jpg" alt="">
+                    <h3>Tarte aux fruits frais </h3>
+                    <h4>15€</h4>
+                    <h5>Une croûte croustillante remplie de crème pâtissière légère et recouverte d'un assortiment de fruits frais de saison comme les fraises, les bleuets, les kiwis et les oranges. Un dessert léger et rafraîchissant parfait pour terminer un repas copieux.</h5>
+                </div>
+                <div id="menu2" class="item dessert">
+                    <img src="images/tiramisu.png" alt="">
+                    <h3>Tiramisu Gourmet </h3>
+                    <h4>16.50€</h4>
+                    <h5>Des biscuits à la cuillère trempés dans un café espresso et de l'amaretto, alternés avec une crème mascarpone au zeste de citron et au chocolat noir râpé. Servi dans des coupes individuelles, garni de menthe fraîche et de cacao en poudre. Un mariage exquis de saveurs et de textures.</h5>
+                </div>
+                <div id="menu2" class="item dessert">
+                    <img src="images/assiette-vue-dessus-glace-au-chocolat.jpg" alt="">
+                    <h3>Mousse au chocolat noir</h3>
+                    <h4>12€</h4>
+                    <h5>Une mousse onctueuse et veloutée préparée avec du chocolat noir de haute qualité, des œufs, du sucre et une touche de vanille. Servie dans des petits ramequins individuels et garnie de copeaux de chocolat noir pour une touche supplémentaire de gourmandise.</h5>
+                </div>
+                <div id="menu2" class="item dessert">
+                    <img src="images/cremebrulee.png" alt="">
+                    <h3>Crème brûlée à la vanille </h3>
+                    <h4>11€</h4>
+                    <h5>Une crème anglaise parfumée à la vanille, cuite lentement jusqu'à ce qu'elle soit juste prise, puis saupoudrée de sucre cassonade et caramélisée à l'aide d'un chalumeau de cuisine pour former une délicieuse croûte craquante sur le dessus.</h5>
+                </div>
+                <div id="menu2" class="item entreev entree">
+                    <img src="images/assiette-pain-grille-salade-fraiche.jpg" alt="">
+                    <h3>Tartare de betteraves et chèvre frais</h3>
+                    <h4>13€</h4>
+                    <h5>Des betteraves rouges et jaunes finement coupées en dés et assaisonnées avec de l'huile d'olive extra vierge, du vinaigre balsamique et des herbes fraîches, servies avec des quenelles de chèvre frais et des tuiles de pain croustillantes.</h5>
+                </div>
+                <div id="menu2" class="item entreev entree">
+                    <img src="images//soupe-aux-tomates-ingredient-epice-dessus.jpg" alt="">
+                    <h3>Soupe de courge musquée rôtie au safran</h3>
+                    <h4>17€</h4>
+                    <h5>Une soupe veloutée et onctueuse préparée avec de la courge musquée rôtie, du bouillon de légumes, du safran et de la crème fraîche, garnie de brins de safran pour une touche de luxe et de couleur.</h5>
+                </div>
+                <div id="menu2" class="item entreev entree">
+                    <img src="images/saladetruffe.png" alt="">
+                    <h3>Salade d'asperges grillées et à la truffe</h3>
+                    <h4>15€</h4>
+                    <h5>Des asperges fraîches grillées à la perfection et disposées sur un lit de roquette, arrosées d'une vinaigrette à l'huile de truffe et au vinaigre balsamique, garnies de copeaux de parmesan et de truffe noire fraîche pour une saveur exquise.</h5>
+                </div>
+                <div id="menu2" class="item entree">
+                    <img src="images/boeuf.png" alt="">
+                    <h3>Carpaccio de bœuf Wagyu</h3>
+                    <h4>30€</h4>
+                    <h5> Des tranches ultra-fines de filet de bœuf Wagyu cru, marinées dans de l'huile d'olive extra vierge, du jus de citron, des câpres et des copeaux de parmesan, servies avec des feuilles de roquette et des tranches de pain grillé.</h5>
+                </div>
+                <div id="menu2" class="item entree">
+                    <img src="images/figue.png" alt="">
+                    <h3>Foie gras poêlé aux figues rôties</h3>
+                    <h4>29€</h4>
+                    <h5>Des escalopes de foie gras frais poêlées à la perfection, servies avec des quartiers de figues rôties au miel et au vinaigre balsamique, accompagnées de pain brioché grillé et d'une réduction de vin rouge.</h5>
+                </div>
+                <div id="menu2" class="item entree">
+                    <img src="images/thonrouge.png" alt="">
+                    <h3>Tartare de thon rouge et avocat</h3>
+                    <h4>32€</h4>
+                    <h5>Des dés de thon rouge frais coupés en petits morceaux et mélangés avec de l'avocat mûr, des oignons rouges, du jus de citron vert, de la coriandre fraîche et des flocons de piment rouge, servi avec des chips de taro croustillantes pour une texture supplémentaire.</h5>
+                </div>
+            </div>
+        </section>
+        <!--Partie Adresse-->
+        <h1 id="titreadresse">Nos Adresses</h1>
+        <section id="sec-adresse">
+            
+            <div id="adresse"> 
+                <h2>Paris</h2>
+                <img src="images/restoparis.jpg" alt="">
+                <h3>41 Avenue Montaigne, 75008 Paris</h3>
+                <h4>Lundi au Samedi: 12:00-14:30 / 19:00-22h30 </h4>
+                <h4>Dimanche: 12:00-14:00 / 19:30-22:00 </h4>
+                <h4>L'Avenue Montaigne est l'une des artères les plus prestigieuses de Paris, réputée pour ses boutiques de luxe telles que Chanel, Dior, Louis Vuitton, et bien d'autres. C'est un lieu incontournable pour les amateurs de shopping haut de gamme.</h4>
+            </div>
+            <div id="adresse"> 
+                <h2>Monaco</h2>
+                <img src="images/restomonaco.png" alt="">
+                <h3>Place du Casino, 98000 Monaco</h3>
+                <h4>Mardi au Samedi: 12:00-23h30 </h4>
+                <h4>Dimanche-Lundi: Fermé </h4>
+                <h4>Le Casino de Monte-Carlo est un emblème du luxe et de l'élégance à Monaco. Outre le jeu, le casino offre un cadre somptueux où se mêlent architecture grandiose et décoration raffinée. Il est également possible d'y trouver des restaurants étoilés et des bars haut de gamme.</h4>
+            </div>
+            <div id="adresse"> 
+                <h2>Nice</h2>
+                <img src="images/restonice.jpg" alt="">
+                <h3>37 Promenade des Anglais, 06000 Nice</h3>
+                <h4>Lundi au Vendredi: 12:00-14:30 / 19:00-22h30 </h4>
+                <h4>Week-End: 12:00-14:00 / 19:00-23:30 </h4>
+                <h4>La Promenade des Anglais est l'une des avenues les plus emblématiques de Nice, offrant une vue magnifique sur la baie des Anges. Bordée de palmiers, de plages de galets et de bâtiments historiques, cette promenade est un lieu de détente et de promenade prisé par les habitants et les visiteurs. De nombreux cafés, restaurants et hôtels de luxe longent cette promenade, offrant ainsi une expérience élégante et raffinée à ceux qui s'y promènent.</h4>
+            </div>
+        </section>
+    <!--Partie des contacts-->
+        <section id="contact">
+            <h1 id="titrecontact">Nos Contacts</h1>
+            <div id="contact-info">
+                <div id="contact-item" >
+                    <img src="images/phonelogo.svg" alt="Téléphone">
+                    <p>+33 6 12 34 56 78</p>
+                </div>
+                <div id="contact-item" >
+                    <img src="images/maillogo.svg" alt="E-mail">
+                    <p>lepavillon.azur@hotmail.com</p>
+                </div>
+                <div id="contact-item" >
+                    <img src="images/instalogo.svg" alt="Instagram">
+                    <p>@Pavillon_Azur</p>
+                </div>
             </div>
         </section>
     </main>
+    <!--Pied de page -->
     <footer>
-        
+        <div class="mention">
+            <div class="legal">
+              <h3>Mentions Légales</h3>
+              <p>Ce site est réalisé pour présenter mon magnifique projet HTML / CSS / JS</p>
+              <p>Tous droits réservés © 2024</p>
+            </div>
+          </div>
     </footer>
-
-    <!--Police d'écriture-->
-<style>
-    @import url(https://db.onlinewebfonts.com/c/082ea5301631c0d689255cd09f71fe9a?family=Pansy+Bo+W03+Regular);
-    @import url(https://fonts.cdnfonts.com/css/tex-gyre-termes);
-</style>
+    
+    
+<!--Liaison code js au site-->
+<script src="accueil.js"></script>
 </body>
 </html>

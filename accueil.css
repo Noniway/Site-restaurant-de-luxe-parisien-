@@ -1,8 +1,5 @@
-/*Hamburger*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
 body{
-    background-color: #d7bb93;
+    background-color: #F7F7F2 ;
 }
 * {
   margin: 0;
@@ -10,60 +7,34 @@ body{
   box-sizing: border-box;
 }
 
-body {
-  font-family: 'TeXGyreTermes', sans-serif;}
+/*Logo*/
+.logo{
+  text-align: center;
+}
 
+#logo1{ 
+width: 100px;
+height: 100px;
+} 
+
+/*barre de navigation */
 #home{
   padding-top: 100px ;
-  color: black;
 }
 .navbar {
   width: 100%;
   visibility: visible;
-  background-color: #013328 ;
+  background-color: #E4E6C3 ;
   position: fixed;
   height: 80px;
 }
 
-.nav-container {
+.container nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 62px;
-  z-index: 5;
-}
-
-.logo{
-    text-align: center;
-}
-
-#logo1{ 
-width: 80px;
-height: 80px;
-}
-/*Réservation boutton et transition*/
-.reserve{
-  display: flex;
-  justify-content:end ;
-  margin-top: -65px;
-  margin-right: 40px;
-}
-#reservation{
-  text-align:center;
-  font-size: 20px;
-  padding: 10px;
-  color: #013328;
-  background-color: #ffe4c7;
-  border-color: #ffe4c7;
-  border-radius: 15px;
-  transition: 0.4s;
-  cursor: pointer;
-}
-#reservation:hover{
-  background-color: #013328;
-  color: #ffe4c7;
-  font-weight: bold;
-  border-color: #013328;
+  z-index:5;
 }
 
 .navbar .menu-items {
@@ -76,7 +47,7 @@ height: 80px;
 
 .navbar .nav-container a {
   text-decoration: none;
-  color: #ffe4c7;
+  color: #222725;
   font-weight: 500;
   font-size: 2rem;
   padding: 1.7rem;
@@ -123,8 +94,9 @@ height: 80px;
   height: 4px;
   width: 100%;
   border-radius: 10px;
-  background: #ffe4c7;
+  background: #121113;
 }
+
 
 .nav-container .hamburger-lines .line1 {
   transform-origin: 0% 0%;
@@ -151,7 +123,7 @@ height: 80px;
   margin-top: -10px;
   transition: transform 0.5s ease-in-out;
   text-align: center;
-  background-color: #013328;
+  background-color: #E4E6C3;
 }
 
 .navbar .menu-items li {
@@ -164,7 +136,7 @@ height: 80px;
   height: 150px;
 }
 
-
+/*changement position hamburger */
 .nav-container input[type="checkbox"]:checked ~ 
 
 .menu-items {
@@ -189,18 +161,47 @@ height: 80px;
   transform: rotate(-45deg);
 }
 
+/*Réservation boutton et transition*/
+.reserve{
+  display: flex;
+  justify-content:end ;
+  margin-top: -85px;
+  margin-right: 40px;
+}
+#reservation{
+  text-align:center;
+  font-size: 20px;
+  padding: 10px;
+  color: #E4E6C3;
+  background-color: #222725;
+  border-color: #222725;
+  border-radius: 15px;
+  transition: 0.4s;
+  font-weight: bold;
+  cursor: pointer;
+}
+#reservation:hover{
+  background-color: #E4E6C3;
+  color: #222725;
+  font-size: 23px;
+  font-weight: bold;
+  border-color: #E4E6C3;
+}
+
+
+/* Image de fond presentation*/
 #home{
   background:linear-gradient(
-      rgba(240, 240, 240, 0.2),
-      rgba(255, 255, 255, 0.336)
-    ), url(images/cafe.jpg) ;
-  
+      rgba(34, 39, 37, 0.4),
+      rgba(0, 0, 0, 0.336)
+    ), url(images/plat1.jpg) ;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 950px;
 }
 
+/*Présentation */
 #presentation{
   display: flex;
   align-items: center;
@@ -214,64 +215,354 @@ height: 80px;
   font-family: "Pansy Bo W03 Regular";
   font-weight: lighter;
   font-size: 100px;
-  color: #013328;
+  color: #F7F7F2;
 }
 
 .soustitre{
   font-family: 'TeXGyreTermes', sans-serif;
-  font-weight: bold;
   font-style: italic;
   font-size: 30px;
-  color: #013328;
+  color: #F7F7F2;
 }
 
 /*Boutton et transition boutton*/
-#menu{
+#btnmenu{
   display: flex;
   border-radius:15px ;
-  font-size: 40px;
+  font-size: 50px;
   margin: 30px;
   padding: 5px 10px;
-  background-color: #013328;
-  border: #013328;
+  background-color: #222725;
+  border: #222725;
   cursor: pointer;
-  transition: 0.5s;
+  transition: 0.5s ease-in-out;
+  font-family: 'TeXGyreTermes', sans-serif;
+  font-weight: bold;
 }
-#menu a{
+#btnmenu a{
   text-decoration: none;
-  color: #ffe4c7;
+  color: #E4E6C3;
 }
-#menu:hover{
-    font-size: 45px;
-}
-#histoire-container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 50px 0;
+#btnmenu:hover{
+    font-size: 58px;
 }
 
-#histoire{
+/*Histoire*/
+#histoire-container{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 150px;
-  width: 1000px;
-  height: 100px;
-  text-align: center;
-  color: #013328;
-  
+  padding: 50px 0;
+  background-image: url(images/toureiffel.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1500px;  
 }
 
-#histoire.h1{
+#histoire{
+  background-color:transparent;
+  display: grid;
+  place-content:center; 
+  padding-top: 50px;
+  width: 750px;
+  border-radius: 20px;
+}
+
+#titrehistoire{
   font-family: "Pansy Bo W03 Regular";
   font-weight: lighter;
   font-size: 100px;
-  color: #013328;
-  margin-bottom: 100px;
-}
-
-#histoire.p{
+  color: #222725;
+  margin-bottom: 20px;
   text-align: center;
 }
+
+#texthistoire{
+  text-align: center;
+}
+
+#debuthistoire{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: transparent;
+  width: 300px;
+  margin-left: -1000px;
+  text-align: center;
+  border-radius: 20px;
+}
+#etoilehistoire{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: transparent;
+  width: 300px;
+  margin-right: -1000px;
+  text-align: center;
+  border-radius: 20px;
+}
+#milieuhistoire{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: transparent;
+  width: 300px;
+  margin-left: -1000px;
+  text-align: center;
+  border-radius: 20px;
+}
+#finhistoire{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: transparent;
+  width: 300px;
+  margin-right: -1000px;
+  text-align: center;
+  border-radius: 20px;
+}
+#annee{
+  font-family: "Pansy Bo W03 Regular";
+  font-weight: bold;
+  font-size: 50px;
+  color: #899878;
+}
+#description{
+  color: #121113;
+  font-family: 'TeXGyreTermes', sans-serif;
+  font-style: italic;
+  font-size: 20px;
+}
+
+/*Menus */
+#menu{
+  height: 600px;
+  background-color: #EEEFDB;
+  border-style: inset;
+  overflow-y: scroll;
+  border-radius: 25px;
+  margin: 0 15px;
+}
+#menu h1{
+  font-family: "Pansy Bo W03 Regular";
+  font-weight: bold;
+  font-size: 75px;
+  text-align: center;
+  color: #121113;
+}
+#scrollmenu{
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 50px;
+}
+
+#scrollmenu img{
+  width: 475px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+#scrollmenu img:hover{
+  width: 525px;
+}
+
+
+#menu2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  width: 500px;
+  height: 550px;
+  background-color: #E4E6C3;
+  color: #121113;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#menu2:hover  {
+  background-color: #222725;
+  color: #EEEFDB;
+  width: 550px;
+  height: 600px;
+}
+
+#scrollmenu h3{
+  font-family: "Pansy Bo W03 Regular";
+  font-size: 26px;
+  font-weight: lighter;
+} 
+
+#scrollmenu h4 , h3{
+  font-family: 'TeXGyreTermes', sans-serif;
+}
+
+/*filtre menus*/
+
+#filter-buttons{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  width: 500px;
+  margin: 0 500px;
+}
+#filter-buttons button{
+  font-size: 27px;
+  font-family: 'TeXGyreTermes', sans-serif;
+  background-color: #222725;
+  color: #eeefdb;
+  width: 200px;
+  padding: 0 30px ;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+#filter-buttons button:hover{
+  font-weight: bold;
+  width: 225px;
+}
+
+
+#filter-buttons button:focus{
+  background-color: #899878;
+  color: #121113;
+  border: #899878;
+}
+
+/*Adresses*/
+#sec-adresse{
+  display: flex;
+  justify-content: space-evenly ;
+}
+
+#adresse{
+  width: 425px;
+  text-align: center;
+  background-color: #F7F7F2;
+  color: #222725;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 6px 6px 25px #222725;
+  transition: 0.5s;
+  cursor: pointer;
+}
+#adresse:hover{
+  background-color: #222725;
+  color: #F7F7F2;
+}
+#titreadresse{
+  font-family: "Pansy Bo W03 Regular";
+  font-weight: lighter;
+  font-size: 100px;
+  color: #222725;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-top: 50px;
+}
+#adresse img{
+  width: 400px;
+  border-radius: 15px;
+  margin-bottom: 15px ;
+}
+
+#adresse h2{
+  font-family: "Pansy Bo W03 Regular";
+  font-weight: lighter;
+  font-size: 45px;
+}
+#adresse h3{
+  font-family: 'TeXGyreTermes', sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+#adresse h4{
+  font-family: 'TeXGyreTermes', sans-serif;
+  font-weight: lighter;
+  font-style:italic ;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/*Contacts*/
+#titrecontact{
+  font-family: "Pansy Bo W03 Regular";
+  font-weight: lighter;
+  font-size: 100px;
+  color: #222725;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-top: 50px;
+
+}
+
+#contact {
+  background-color: #F7F7F2;
+  padding: 50px;
+}
+
+
+#contact-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+  transition: .5s;
+}
+
+
+#contact-item {
+  text-align: center;
+  padding: 20px;
+  border-radius: 15px;
+  transition: .5s;
+}
+#contact-item:hover {
+  background-color: #899878;
+  font-weight: bold;
+}
+
+
+#contact-item img {
+  width: 200px;
+  height: 200px;
+}
+
+#contact-item p {
+  font-family: 'TeXGyreTermes', sans-serif;
+  font-size: 25px;
+}
+
+/*Bas de page*/
+footer {
+  background-color: #222725;
+  color: #F7F7F2;
+  padding: 20px 0;
+}
+
+.mention {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.legal {
+  text-align: center;
+}
+
+.legal h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.legal p {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
